@@ -1,0 +1,5 @@
+for f in `find . -maxdepth 1 -mindepth 1 -type d`; do
+gnome-terminal --tab --working-directory="$PWD/${f#./}" -- /bin/sh -c 'notfirst=false; for file in *.s; do if $notfirst ; then echo ""; fi; echo "------------ ------------ ------------"; echo "${file##*/}"; echo "------------ ------------ ------------"; echo ""; ../riscvopcodecounter "${file##*/}"; notfirst=true; done > ac.txt && exec bash'
+done
+
+# Here just ../riscvopcodecounter and ac.txt are replaceable respect to the your file names.
