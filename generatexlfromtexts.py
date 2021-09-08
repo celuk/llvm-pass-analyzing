@@ -2,8 +2,11 @@ import os
 import pandas as pd
 
 
-folder = "C:\\Users\\shc\\Desktop\\ubuntu" # Location of LLVM pass performed sub folders like -adce -dse
-xls = "C:\\Users\\shc\\Desktop\\yf.xlsx" # Empty Excel file for writing text data
+folder = "C:\\Users\\shc\\Desktop\\ubuntu" 
+# Location of LLVM pass performed sub folders like -adce -dse
+
+xls = "C:\\Users\\shc\\Desktop\\yf.xlsx" 
+# Empty Excel file for writing text data
 
 sub_folders = [name for name in os.listdir(folder) if(os.path.isdir)(os.path.join(folder,name))]
 
