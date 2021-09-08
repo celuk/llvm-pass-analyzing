@@ -27,6 +27,7 @@ Performing llvm pass operations you should clone and build llvm library as:
 
 # For cmake and ninja
 sudo snap install cmake --classic
+
 sudo apt install ninja-build
 
 # For llvm library
