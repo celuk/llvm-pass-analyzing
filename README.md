@@ -19,9 +19,13 @@ You can perform generategraphsfromxl.py to generate bar charts from this Excel f
 For python scripts you should install these packages:
 
 pip install pandas
+
 pip install matplotlib
+
 pip install numpy
+
 pip install openpyxl
+
 
 Performing llvm pass operations you should clone and build llvm library as:
 
