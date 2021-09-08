@@ -5,10 +5,23 @@ YOU SHOULD CHANGE FILE LOCATIONS ON YOUR OWN AS STATED ON THE SCRIPTS
 On Linux:
 If you want to generate llvm pass performed assembly files for every .c code use generatefilesandperformpasses bash script.
 
+Before using, you should make the script executable and then run:
+
+chmod +x generatefilesandperformpasses
+
+./generatefilesandperformpasses
+
+
 After this, there should be sub folders for every passes that include pass performed assembly files.
 These are here as prepared files: https://drive.google.com/drive/folders/1WF6mEyKOX2Y1FMkxhLRCBE3myN1R6Ltk?usp=sharing
 
 You can perform countopcodessaveastexts bash script at this folder but also counted opcodes are ready in sub folders as ac.txts
+
+Before using, you should make the script executable and then run:
+
+chmod +x countopcodessaveastexts
+
+./countopcodessaveastexts
 
 On Windows:
 You can perform generatexlfromtexts.py to generate Excel file from ac.txts
@@ -27,7 +40,7 @@ pip install numpy
 pip install openpyxl
 
 
-Performing llvm pass operations you should clone and build llvm library as:
+For performing llvm pass operations you should clone and build llvm library as:
 
 # For cmake and ninja
 sudo snap install cmake --classic
