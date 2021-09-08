@@ -8,10 +8,11 @@ If you want to generate llvm pass performed assembly files for every .c code use
 
 Before using, you should make the script executable and then run:
 
+```bash
 chmod +x generatefilesandperformpasses
 
 ./generatefilesandperformpasses
-
+```
 
 After this, there should be sub folders for every passes that include pass performed assembly files.
 These are here as prepared files: https://drive.google.com/drive/folders/1WF6mEyKOX2Y1FMkxhLRCBE3myN1R6Ltk?usp=sharing
@@ -20,9 +21,11 @@ You can perform countopcodessaveastexts bash script at this folder but also coun
 
 Before using, you should make the script executable and then run:
 
+```bash
 chmod +x countopcodessaveastexts
 
 ./countopcodessaveastexts
+```
 
 Windows part:
 
@@ -33,6 +36,7 @@ You can perform generategraphsfromxl.py to generate bar charts from this Excel f
 
 For python scripts you should install these packages:
 
+```bash
 pip install pandas
 
 pip install matplotlib
@@ -40,18 +44,24 @@ pip install matplotlib
 pip install numpy
 
 pip install openpyxl
-
+```
 
 For performing llvm pass operations you should clone and build llvm library as:
 
 # For cmake and ninja
+
+```bash
 sudo snap install cmake --classic
 
 sudo apt install ninja-build
+```
 
 # For llvm library
+
+```bash
 git clone https://github.com/llvm/llvm-project.git && cd llvm-project && mkdir build && cd build && cmake -G Ninja -DLLVM_ENABLE_PROJECTS=clang -DLLVM_TARGETS_TO_BUILD=all -DLLVM_ENABLE_LIBCXX=ON -DCMAKE_BUILD_TYPE=Release -DLLVM_INSTALL_UTILS=ON -DBUILD_SHARED_LIBS=True -DLLVM_USE_SPLIT_DWARF=True -DLLVM_OPTIMIZED_TABLEGEN=True -DLLVM_BUILD_TESTS=True -DLLVM_PARALLEL_LINK_JOBS=1 ../llvm && cmake --build .
+```
 
 Just you need to copy and paste above command to terminal it can take too much time.
 
-After built, for llvm file locations you can find executables in bin folder like /home/shc/llvm/llvm-project/build/bin/clang, /home/shc/llvm/llvm-project/build/bin/opt
+After built, for llvm file locations you can find executables in bin folder like ```/home/shc/llvm/llvm-project/build/bin/clang```, ```/home/shc/llvm/llvm-project/build/bin/opt```
