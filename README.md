@@ -19,9 +19,11 @@ These are here as prepared files: https://drive.google.com/drive/folders/1WF6mEy
 
 You can perform **countopcodessaveastexts** bash script at this folder but also counted opcodes are ready in sub folders as **ac.txt**s
 
-Before using, you should make the script executable and then run:
+Before using, you should compile riscvopcodecounter.cpp, make the bash script executable and then run:
 
 ```bash
+g++ riscvopcodecounter.cpp -o riscvopcodecounter
+
 chmod +x countopcodessaveastexts
 
 ./countopcodessaveastexts
