@@ -4,7 +4,7 @@ YOU SHOULD CHANGE FILE LOCATIONS ON YOUR OWN AS STATED ON THE SCRIPTS
 
 # Linux Part
 
-If you want to generate llvm pass performed assembly files for every .c code use generatefilesandperformpasses bash script.
+If you want to generate llvm pass performed assembly files for every .c code use **generatefilesandperformpasses** bash script.
 
 Before using, you should make the script executable and then run:
 
@@ -17,7 +17,7 @@ chmod +x generatefilesandperformpasses
 After this, there should be sub folders for every passes that include pass performed assembly files.
 These are here as prepared files: https://drive.google.com/drive/folders/1WF6mEyKOX2Y1FMkxhLRCBE3myN1R6Ltk?usp=sharing
 
-You can perform countopcodessaveastexts bash script at this folder but also counted opcodes are ready in sub folders as ac.txts
+You can perform **countopcodessaveastexts** bash script at this folder but also counted opcodes are ready in sub folders as **ac.txt**s
 
 Before using, you should make the script executable and then run:
 
@@ -29,10 +29,10 @@ chmod +x countopcodessaveastexts
 
 # Windows Part
 
-You can perform generatexlfromtexts.py to generate Excel file from ac.txts
+You can perform **generatexlfromtexts.py** to generate **Excel file** from **ac.txt**s
 Generated Excel file is here: https://docs.google.com/spreadsheets/d/10ycsNMaOO5hd7FX9r2K0taCoYTO8YBPf/edit?usp=sharing&ouid=111846633649891187648&rtpof=true&sd=true
 
-You can perform generategraphsfromxl.py to generate bar charts from this Excel file
+You can perform **generategraphsfromxl.py** to generate bar charts from this **Excel file**
 
 
 # Required Installations
