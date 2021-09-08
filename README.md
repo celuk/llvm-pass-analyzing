@@ -2,7 +2,7 @@
 
 YOU SHOULD CHANGE FILE LOCATIONS ON YOUR OWN AS STATED ON THE SCRIPTS
 
-Linux part:
+#Linux Part
 
 If you want to generate llvm pass performed assembly files for every .c code use generatefilesandperformpasses bash script.
 
@@ -27,7 +27,7 @@ chmod +x countopcodessaveastexts
 ./countopcodessaveastexts
 ```
 
-Windows part:
+#Windows Part
 
 You can perform generatexlfromtexts.py to generate Excel file from ac.txts
 Generated Excel file is here: https://docs.google.com/spreadsheets/d/10ycsNMaOO5hd7FX9r2K0taCoYTO8YBPf/edit?usp=sharing&ouid=111846633649891187648&rtpof=true&sd=true
@@ -62,6 +62,6 @@ sudo apt install ninja-build
 git clone https://github.com/llvm/llvm-project.git && cd llvm-project && mkdir build && cd build && cmake -G Ninja -DLLVM_ENABLE_PROJECTS=clang -DLLVM_TARGETS_TO_BUILD=all -DLLVM_ENABLE_LIBCXX=ON -DCMAKE_BUILD_TYPE=Release -DLLVM_INSTALL_UTILS=ON -DBUILD_SHARED_LIBS=True -DLLVM_USE_SPLIT_DWARF=True -DLLVM_OPTIMIZED_TABLEGEN=True -DLLVM_BUILD_TESTS=True -DLLVM_PARALLEL_LINK_JOBS=1 ../llvm && cmake --build .
 ```
 
-Just you need to copy and paste above command to terminal it can take too much time.
+Just you need to copy and paste above commands to terminal it can take too much time.
 
-After built, for llvm file locations you can find executables in bin folder like ```/home/shc/llvm/llvm-project/build/bin/clang```, ```/home/shc/llvm/llvm-project/build/bin/opt```
+After built, for llvm file locations you can find executables in bin folder like ```/home/shc/llvm/llvm-project/build/bin/clang```  ```/home/shc/llvm/llvm-project/build/bin/opt```
