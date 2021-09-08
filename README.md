@@ -2,7 +2,8 @@
 
 YOU SHOULD CHANGE FILE LOCATIONS ON YOUR OWN AS STATED ON THE SCRIPTS
 
-On Linux:
+Linux part:
+
 If you want to generate llvm pass performed assembly files for every .c code use generatefilesandperformpasses bash script.
 
 Before using, you should make the script executable and then run:
@@ -23,7 +24,8 @@ chmod +x countopcodessaveastexts
 
 ./countopcodessaveastexts
 
-On Windows:
+Windows part:
+
 You can perform generatexlfromtexts.py to generate Excel file from ac.txts
 Generated Excel file is here: https://docs.google.com/spreadsheets/d/10ycsNMaOO5hd7FX9r2K0taCoYTO8YBPf/edit?usp=sharing&ouid=111846633649891187648&rtpof=true&sd=true
 
