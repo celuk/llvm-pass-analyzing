@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import openpyxl
 
-folder = "C:\\Users\\shc\\Desktop\\ubuntu"
-xls = "C:\\Users\\shc\\Desktop\\yf2.xlsx"
-saveloc = "C:\\Users\\shc\\Desktop\\imgs\\"
+folder = "C:\\Users\\shc\\Desktop\\ubuntu" # Location of LLVM pass performed sub folders like -adce -dse
+xls = "C:\\Users\\shc\\Desktop\\yf.xlsx" # Written Excel file
+saveloc = "C:\\Users\\shc\\Desktop\\imgs\\" # Empty save location for images
 
 sub_folders = [name for name in os.listdir(folder) if(os.path.isdir)(os.path.join(folder,name))]
 
